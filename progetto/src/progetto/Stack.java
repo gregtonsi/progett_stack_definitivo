@@ -143,7 +143,7 @@ public class Stack implements Serializable
 	public String getNomeTXT()
 	{
 		LocalDateTime data=LocalDateTime.now();
-		return  "C:\\Users\\ale\\Desktop\\progetto_stack_def\\progetto\\log\\log_"+data.getDayOfMonth()+"_"+data.getMonthValue()+"_"+data.getYear()+"_"+data.getHour()+"_"+data.getMinute()+"_"+data.getSecond()+".txt";
+		return  "log\\log_"+data.getDayOfMonth()+"_"+data.getMonthValue()+"_"+data.getYear()+"_"+data.getHour()+"_"+data.getMinute()+"_"+data.getSecond()+".txt";
 	}
 	/**
 	 * Converte la lista dei metodi dello stack in un array di metodi 
@@ -260,7 +260,7 @@ public class Stack implements Serializable
 	public String getNomeBIN() 
 	{
 		LocalDateTime data=LocalDateTime.now();
-		return "C:\\Users\\ale\\Desktop\\progetto_stack_def\\progetto\\stack\\"+data.getDayOfMonth()+"_"+data.getMonthValue()+"_"+data.getYear()+"_"+data.getHour()+"_"+data.getMinute()+"_"+data.getSecond()+".bin";
+		return "stack\\"+data.getDayOfMonth()+"_"+data.getMonthValue()+"_"+data.getYear()+"_"+data.getHour()+"_"+data.getMinute()+"_"+data.getSecond()+".bin";
 	}
 	/**
 	 * Mostra i possibili file da cui caricare uno stack e permette di sceglierlo,restituendone il nome
@@ -272,7 +272,7 @@ public class Stack implements Serializable
 	public String percorsoStack() throws NumberFormatException, IOException, StackException
 	{
 		ConsoleInput scelta=new ConsoleInput();
-		File dir = new File("C:\\Users\\ale\\Desktop\\progetto_stack_def\\progetto\\stack");
+		File dir = new File("stack\\");
 		File[] files = dir.listFiles();
 		if(files==null)
 		{

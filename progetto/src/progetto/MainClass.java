@@ -11,7 +11,6 @@ public class MainClass {
 		int scelta;
 		Stack pila=new Stack();
 		Metodo metodo;
-		System.out.println("si ricorda di porre le giuste path in modo da far lavorare nel modo corretto il programma...");
 		do
 		{
 			scelta=menu.scelta();
@@ -80,7 +79,7 @@ public class MainClass {
 				try 
 				{
 					String nomeFile=pila.percorsoStack();
-					pila=pila.deserializzazione("C:\\Users\\ale\\Desktop\\progetto_stack_def\\progetto\\stack\\"+nomeFile);
+					pila=pila.deserializzazione("stack\\"+nomeFile);
 				
 				} 
 				catch (NumberFormatException e) 
